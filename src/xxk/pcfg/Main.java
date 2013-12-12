@@ -23,5 +23,6 @@ public class Main {
 		train.printRules("model.txt");
 		//
 		Parse parse=new Parse("A boy with a telescope saw a girl",train);
+		parse.printParse("parse.txt");
 	}
 }

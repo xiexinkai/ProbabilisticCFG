@@ -35,5 +35,21 @@ public class Chart{
 			beta+=p*lC.beta*rC.beta;
 		}
 	}
+	
+	public void printDebug(){
+		if(l!=r && lC!=null){
+			System.out.print("chart["+l+"]["+r+"]:"); 
+			System.out.print(s+"->"+lC.s+" "+rC.s);
+			System.out.print("      p="+p);
+			System.out.print("      a="+alpha);
+			System.out.println("      b="+beta);
+		}else if(l==r){
+			System.out.print("chart["+l+"]["+r+"]:"); 
+			System.out.print(s+"->"+word);
+			System.out.print("      p="+p);
+			System.out.print("      a="+alpha);
+			System.out.println("      b="+beta);
+		}
+	}
 }
 
